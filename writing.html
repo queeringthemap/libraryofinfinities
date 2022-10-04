@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+      <title> Library of Infinities</title>
+
+
+
+
+</head>
+<header>
+<h1><a href="index.html"> LIBRARY OF INFINITIES</a></h1>
+<!-- <div id="menu">
+  <a href="#menu" class="active">MENU</a>
+</div> -->
+</header>
+
+    <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavright()">X</a>
+        <div class="overlay-content">
+
+            <a href="about.html">ABOUT</a>
+            <a href="index.html">LIBRARY</a>
+            <a href="writing3.html">WRITING</a>
+            <a href="programming.html">PROGRAMMING</a>
+            <a href="resources.html">RESOURCES</a>
+            <a href="mailto:contact@libraryofinfinities.com">CONTACT</a>
+
+
+        </div>
+    </nav>
+
+    <span id="trigger"  onclick="openNavright()">MENU</span>
+
+    <script>
+        function openNavright() {
+            document.getElementById("myNav").style.right = "0%";
+            windowOpen =true;
+        }
+
+        function closeNavright() {
+            document.getElementById("myNav").style.right = "-50.5%";
+            windowOpen =false;
+
+        }
+    </script>
+
+
+
+<body>
+
+<script>
+//   var headerOffset = function() {
+//   var headerHeight = $('header').height();
+//   $('.content').css('margin-top', headerHeight);
+// }
+
+// $(document).ready(function() {
+//     headerOffset();
+// });
+</script>
+
+<script>
+
+  var footerOffset = function() {
+  var footerHeight = $('footer').height();
+  $('.content').css('margin-bottom', footerHeight);
+}
+
+$(document).ready(function() {
+    footerOffset();
+});
+</script>
+
+
+<main class="content">
+
+
+<div class="row no-gutters">
+
+  <div class="col-md-6 no-gutters">
+
+  		<div class="leftside">
+
+        <h1>Writing</h1>
+
+    <a href="blackgeographies.html"> <img src="images/blackgeo.png" alt="Intro DJ Workshop">
+
+      <h1>Journeying through Black Geographies<br><i>by Ojo Agi</i></h1></a>
+
+    <div class="spacer"></div>
+
+  		</div>
+
+   
+  </div>
+
+  <div class="col-md-6 no-gutters">
+
+  	  		<div id="rightside">
+  	 
+
+
+        <div class="spacer"></div>
+
+
+   </div>
+
+</div>
+
+
+
+</main>
+
+<div class="marquee">
+        <p> JOIN THE MAILING LIST </p>
+    </div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script>
+
+$(document).ready(function (){
+    $('.buttons button').click(function (){
+        $('#rightside').empty();
+        $('#rightside').html($("#" + $(this).data('link')).html());
+    });    
+ });
+ </script>
+
+ <script>
+ $(function(){
+var scroll_text;
+$('myUL').hover(
+    function () {
+        var $elmt = $(this);
+        scroll_text = setInterval(function(){scrollText($elmt);}, 5);
+    },
+    function () {
+        clearInterval(scroll_text);
+        $(this).find('myUL li a').css({
+            left: 0
+        });
+    }
+);
+    
+    var scrollText = function($elmt){
+        var left = $elmt.find('myUL li a').position().left - 1;
+        left = -left > $elmt.find('myUL li a').width() ? $elmt.find('myUL').width() : left;
+        $elmt.find('myUL li a').css({
+            left: left
+        });
+    };
+    
+});
+ </script>
+
+</body>
+</html>

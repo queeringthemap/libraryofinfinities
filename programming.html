@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+      <title> Library of Infinities</title>
+
+
+
+
+</head>
+<header>
+<h1><a href="index.html"> LIBRARY OF INFINITIES</a></h1>
+<!-- <div id="menu">
+  <a href="#menu" class="active">MENU</a>
+</div> -->
+</header>
+
+    <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavright()">X</a>
+        <div class="overlay-content">
+
+            <a href="about.html">ABOUT</a>
+            <a href="team.html">TEAM</a>
+            <a href="index.html">LIBRARY</a>
+            <a href="writing3.html">WRITING</a>
+            <a href="programming.html">PROGRAMMING</a>
+            <a href="resources.html">RESOURCES</a>
+            <a href="mailto:contact@libraryofinfinities.com">CONTACT</a>
+
+
+        </div>
+    </nav>
+
+    <span id="trigger"  onclick="openNavright()">MENU</span>
+
+    <script>
+        function openNavright() {
+            document.getElementById("myNav").style.right = "0%";
+            windowOpen =true;
+        }
+
+        function closeNavright() {
+            document.getElementById("myNav").style.right = "-50.5%";
+            windowOpen =false;
+
+        }
+    </script>
+
+
+
+<body>
+
+<script>
+//   var headerOffset = function() {
+//   var headerHeight = $('header').height();
+//   $('.content').css('margin-top', headerHeight);
+// }
+
+// $(document).ready(function() {
+//     headerOffset();
+// });
+</script>
+
+<script>
+
+  var footerOffset = function() {
+  var footerHeight = $('footer').height();
+  $('.content').css('margin-bottom', footerHeight);
+}
+
+$(document).ready(function() {
+    footerOffset();
+});
+</script>
+
+
+<main class="content">
+
+
+<div class="row no-gutters">
+
+  <div class="col-md-6 no-gutters">
+
+  		<div class="leftside">
+
+        <h1>Upcoming Programming</h1>
+    <img src="images/printedmatter.png" alt="Intro DJ Workshop">
+
+      <h1>Library of Infinities at Printed Matter Art Book Fair 2022</h1>
+
+    
+    <p>For the launch of Library of Infinities at Printed Matter, two limited edition series of works designed with Shaya’s creative direction will be released. A collaboration with multidisciplinary artist G L O W Z I that celebrates the launch of the Library of Infinities as a digital platform will be showcased. Additionally, a series of posters and tote bags designed by Simon Guibord will also be available. These memorabilia celebrate the humble beginnings of the project and exhibition that took place at SAW, an artist-run center in Ottawa, during the summer of 2021.</p>
+
+
+     <hr>
+
+    <div class="spacer"></div>
+
+  		</div>
+
+   
+  </div>
+
+  <div class="col-md-6 no-gutters">
+
+  	  		<div id="rightside">
+  	  	<h1>Past Programming</h1>
+
+        <img src="images/InfiniteVibes-IntroDJWorkshop-23.jpg" alt="Intro DJ Workshop">
+
+      <h1>Infinite Vibes: Intro DJ Workshop facilitated by Pass the Vibes</h1>
+
+    
+    <p>Pass the Vibes is a grassroots arts collective aimed at fostering an inclusive and accessible ecosystem of QTBIPOC and other BIPOC creatives in Ottawa. Celeste Alcena and Mars Ramlogs, founding members of PTV, co-facilitated a workshop that covered historical, technical and practical aspects of DJing the weekend of September 11th in the Library of Infinities. Participants got the chance to have hands-on practice with both DDJ and CDJ controllers. </p>
+
+    <p>This workshop took place as part of Pique, a new forward-thinking, artist-driven quarterly event series featuring eclectic musical, visual and multimedia artists produced by Debaser. Debaser is one of Ottawa’s leading independent and underground music presenters, best known for its experimental music curation and inclusive events. Shaya was an invited curator of this season’s round of Pique.</p>
+
+     <hr>
+
+     <img src="images/producedbyyouth.JPG" alt="Produced By Youth">
+
+      <h1>Produced by Youth x Library of Infinities</h1>
+
+    
+    <p>Produced by Youth is a grassroots organization that leads music production workshops for black youth in Ottawa. They are dedicated to creating safe(r) spaces where youth can explore their creativity, be empowered, and build confidence. During the exhibition period of the Library of Infinities, Shaya teamed up with the founders (Tafari, Lealem, and Samuel) to facilitate a sample based music production workshop that fit into their curriculum. We used the vinyl library as a starting point to select records and make samples using midi controllers as well as the SP-404. </p>
+
+     <hr>
+
+     <img src="images/LoI_home.png" alt="Placeholder">
+
+      <h1>SENSING: A workshop facilitated by francesca ekwuyasi and Shaya Ishaq</h1>
+
+    
+    <p>SENSING was a dynamic creative writing workshop presented as part of the exhibition Library of Infinities. Participants were invited to explore the exhibition  and other prompts through ekphrastic practice to engage our various senses. As part of this offering, an original syllabus was developed that can be found on our resources page.</p>
+
+     <hr>
+
+
+        <div class="spacer"></div>
+
+
+   </div>
+
+</div>
+
+
+
+</main>
+
+<div class="marquee">
+        <p> <a href="https://mailchi.mp/6b822e41a101/library-of-infinities-canada">JOIN THE MAILING LIST </a></p>
+    </div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script>
+
+$(document).ready(function (){
+    $('.buttons button').click(function (){
+        $('#rightside').empty();
+        $('#rightside').html($("#" + $(this).data('link')).html());
+    });    
+ });
+ </script>
+
+ <script>
+ $(function(){
+var scroll_text;
+$('myUL').hover(
+    function () {
+        var $elmt = $(this);
+        scroll_text = setInterval(function(){scrollText($elmt);}, 5);
+    },
+    function () {
+        clearInterval(scroll_text);
+        $(this).find('myUL li a').css({
+            left: 0
+        });
+    }
+);
+    
+    var scrollText = function($elmt){
+        var left = $elmt.find('myUL li a').position().left - 1;
+        left = -left > $elmt.find('myUL li a').width() ? $elmt.find('myUL').width() : left;
+        $elmt.find('myUL li a').css({
+            left: left
+        });
+    };
+    
+});
+ </script>
+
+</body>
+</html>
